@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e3e8f1; /* Cor de fundo da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pagination-container {
+    background-color: #e3e8f1;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Borda suave externa */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.page-list {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+
+/* Estilo Base dos Botões */
+.btn-nav, .page-item {
+    background-color: #e3e8f1;
+    border: none;
+    cursor: pointer;
+    color: #4d3e77; /* Cor roxa da fonte */
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.page-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* Efeito Neumórfico Elevado (Raised) */
+.neu-raised {
+    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.6), 
+               -5px -5px 10px rgba(255, 255, 255, 1);
+}
+
+/* Efeito Neumórfico Pressionado (Pressed) */
+.neu-pressed {
+    box-shadow: inset 4px 4px 8px rgba(163, 177, 198, 0.5), 
+               inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Estado Ativo (Número 8 na imagem) */
+.active {
+    color: #7b61ff; /* Roxo mais vibrante */
+}
+
+/* Hover para interatividade */
+.page-item:hover, .btn-nav:hover {
+    transform: scale(0.98);
+}
